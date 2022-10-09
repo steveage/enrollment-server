@@ -20,7 +20,7 @@ course1 = Course.create( code: 'CS101', name: 'Intro to programming.', section: 
 course2 = Course.create( code: 'CS101', name: 'Intro to programming.', section: "2", teacher: teacher2, semester: semester1 )
 course3 = Course.create( code: 'MA201', name: 'Algebra Level 1', section: "1", teacher: teacher1, semester: semester1 )
 course4 = Course.create( code: 'PHYS104', name: 'Thermodynamics', section: "1", teacher: teacher2, semester: semester1 )
-course5 = Course.create( code: 'COM102', name: 'Foundamentals of Communication', section: "1", teacher: teacher1, semester: semester2 )
+course5 = Course.create( code: 'COM102', name: 'Fundamentals of Communication', section: "1", teacher: teacher1, semester: semester2 )
 
 enrollment1 = Enrollment.create( user: student1, course: course1, score: 'A' )
 enrollment2 = Enrollment.create( user: student1, course: course3, score: "B" )
