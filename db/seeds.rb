@@ -10,11 +10,11 @@ puts "🌱 Seeding school..."
 semester1 = Semester.create( year: 2022, period: 'spring' )
 semester2 = Semester.create( year: 2022, period: 'fall' )
 
-teacher1 = User.create( first_name: 'Teacher_1_First', last_name: 'Teacher_1_Last', email: 'teacher1@gmail.com', role: 'teacher' )
-teacher2 = User.create( first_name: 'Teacher 2 first', last_name: 'Teacher 2 last', email: 'teacher2@mail.com', role: 'teacher' )
+teacher1 = User.create( first_name: 'Teacher_1_First', last_name: 'Teacher_1_Last', email: 'teacher1@gmail.com', role: 'teacher', password: 'asdf', password_confirmation: 'asdf' )
+teacher2 = User.create( first_name: 'Teacher 2 first', last_name: 'Teacher 2 last', email: 'teacher2@mail.com', role: 'teacher', password: 'asdf', password_confirmation: 'asdf' )
 
-student1 = User.create( first_name: 'Student1_first', last_name: 'Student1_last', email: 'student1@gmail.com', role: 'student' )
-student2 = User.create( first_name: 'Student 2 first', last_name: 'Student 2 last', email: 'student2@mail.com', role: 'student' )
+student1 = User.create( first_name: 'Student1_first', last_name: 'Student1_last', email: 'student1@gmail.com', role: 'student', password: 'asdf', password_confirmation: 'asdf' )
+student2 = User.create( first_name: 'Student 2 first', last_name: 'Student 2 last', email: 'student2@mail.com', role: 'student', password: 'asdf', password_confirmation: 'asdf' )
 
 course1 = Course.create( code: 'CS101', name: 'Intro to programming.', section: "1", teacher: teacher1, semester: semester1 )
 course2 = Course.create( code: 'CS101', name: 'Intro to programming.', section: "2", teacher: teacher2, semester: semester1 )
