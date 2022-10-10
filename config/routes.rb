@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   resources :semesters, only: [ :index, :create ]
   resources :teachers, only: [ :index, :create ]
   resources :courses, only: [ :index, :create ]
-  resources :enrollments, only: [ :index, :create ]
+  resources :enrollments, only: [ :index, :create, :destroy, :update ]
   post '/login', to: "sessions#create"
 end

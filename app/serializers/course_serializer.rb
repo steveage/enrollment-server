@@ -3,4 +3,5 @@ class CourseSerializer < ActiveModel::Serializer
 
   belongs_to :semester
   belongs_to :teacher
+  has_many :students
 end
